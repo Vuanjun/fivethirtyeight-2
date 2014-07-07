@@ -1,0 +1,13 @@
+ul.nav-menu {
+	padding-left: 0;
+	list-style-type: none;
+}
+li.menu-item {
+	color: $text-black;
+	text-align: center;
+	display: inline-block;
+	margin-left: 5px;
+	@include adjust-font-size-to(18px);
+	font-weight: bold;
+	border-bottom: 4px solid #D2D2D2;
+}

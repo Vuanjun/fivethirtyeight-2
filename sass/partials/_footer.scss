@@ -1,0 +1,65 @@
+.footer {
+	@include leader(2);
+	border-top: 6px solid #696969;
+	text-align: center;
+}
+
+ul.footer-contact-links-menu {
+	padding-left: 0;
+	list-style-type: none;
+	@include pie-clearfix;
+	position: relative;
+
+	li.contact-links-contact {
+		text-align: center;
+		width: 48.5%;
+		float:left;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		background: #E1E1E1;
+		padding: 5px 0;
+		font-weight: bold;
+		@include adjust-font-size-to(12px);
+		&:hover {
+			cursor: pointer;
+			background: #B4B4B4;
+		}
+	}
+	li.contact-links-site {
+		text-align: center;
+		width: 100%;
+		float: none;
+		display: block;
+		@include trailer(0.5);
+		padding: 5px 0;
+		@include adjust-font-size-to(24px, 1.2);
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+	li.contact-links-rss {
+		text-align: center;
+		display: block;
+		width: 48.5%;
+		float: right;
+		background: #E1E1E1;
+		padding: 5px 0;
+		@include adjust-font-size-to(12px);
+		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+			background: #B4B4B4;
+		}
+	}
+}
+
+p.copyright {
+	@include trailer(0.5);
+	@include adjust-font-size-to(11px);
+	color: $text-gray;
+}
+p.powerby {
+	@include leader(0);
+	@include adjust-font-size-to(13px);
+	font-weight: bold;
+}
